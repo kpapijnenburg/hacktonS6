@@ -1,10 +1,8 @@
 import React, { Component } from "react";
-import Switch from "react-switch"
+import Switch from "react-switch";
 import DataAdapter from "../util/DataAdapter";
 
 class TestPersoon extends Component {
-
-
   constructor(props) {
     const adapter = new DataAdapter();
 
@@ -24,7 +22,9 @@ class TestPersoon extends Component {
 
   componentDidMount = () => {
     this.displayProfile();
-  }
+  };
+
+  handleChange() {}
 
   displayProfile = () => {
     const { user } = this.state;
@@ -44,34 +44,38 @@ class TestPersoon extends Component {
           <tbody>
             <tr>
               <th>Naam</th>
-              <th>{user.name}</th>
-              <th>
-                <Switch checked={false} />
-              </th>
-              <th className="text-center text-danger pointer">X</th>
+              <td>{user.name}</td>
+              <td>
+                <Switch onChange={this.handleChange} />
+              </td>
+              <td className="text-center text-danger pointer">
+                <strong>X</strong>
+              </td>
             </tr>
             <tr>
               <th>Telefoonnummer</th>
-              <th>+31637474440</th>
-              <th >
-                <Switch checked={false} />
-              </th>
-              <th className="text-center text-danger pointer">X</th>
+              <td>+31637474440</td>
+              <td>
+                <Switch onChange={this.handleChange} />
+              </td>
+              <td className="text-center text-danger pointer">
+                <strong> X </strong>
+              </td>
             </tr>
             <tr>
               <th>Email</th>
-              <th>jasperdekroon2000@gmail.com</th>
-              <th>
-                <Switch checked={false} />
-              </th>
+              <td>jasperdekroon2000@gmail.com</td>
+              <td>
+                <Switch onChange={this.handleChange} />
+              </td>
               <th className="text-center text-danger pointer">X</th>
             </tr>
           </tbody>
         </table>
       </section>
     );
-    this.setState({ content })
-  }
+    this.setState({ content });
+  };
 
   displayServices = () => {
     const { user } = this.state;
@@ -93,7 +97,7 @@ class TestPersoon extends Component {
               <th>Facebook</th>
               <th>{user.name}</th>
               <th>
-                <Switch checked={false} />
+                <Switch onChange={this.handleChange} />
               </th>
               <th className="d-flex justify-content-center">
                 <button className="btn btn-danger">Disconnect</button>
@@ -103,7 +107,7 @@ class TestPersoon extends Component {
               <th>Twitter</th>
               <th>{user.name}</th>
               <th>
-                <Switch checked={false} />
+                <Switch onChange={this.handleChange} />
               </th>
               <th className="d-flex justify-content-center">
                 <button className="btn btn-primary">Connect</button>
@@ -113,8 +117,8 @@ class TestPersoon extends Component {
         </table>
       </section>
     );
-    this.setState({ content })
-  }
+    this.setState({ content });
+  };
 
   displayData = () => {
     const content = (
@@ -188,8 +192,8 @@ class TestPersoon extends Component {
       </section>
     );
 
-    this.setState({ content })
-  }
+    this.setState({ content });
+  };
 
   render() {
     const { content, user } = this.state;
@@ -197,15 +201,27 @@ class TestPersoon extends Component {
       <section className="col">
         <p className="lead">{user.name}</p>
         <div className="border row">
-          <div className="col">
-            {content}
-          </div>
-          
+          <div className="col">{content}</div>
 
           <div className="border-left col-2 d-flex flex-column p-0">
-            <button className="btn btn-light m-1 border" onClick={this.displayProfile}>Profiel</button>
-            <button className="btn btn-light m-1 border" onClick={this.displayServices}>Services</button>
-            <button className="btn btn-light m-1 border" onClick={this.displayData}>Data</button>
+            <button
+              className="btn btn-light m-1 border"
+              onClick={this.displayProfile}
+            >
+              Profiel
+            </button>
+            <button
+              className="btn btn-light m-1 border"
+              onClick={this.displayServices}
+            >
+              Services
+            </button>
+            <button
+              className="btn btn-light m-1 border"
+              onClick={this.displayData}
+            >
+              Data
+            </button>
           </div>
         </div>
       </section>
