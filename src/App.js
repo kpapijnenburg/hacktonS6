@@ -4,14 +4,13 @@ import Onderzoekers from "./components/onderzoekers";
 import TestPersoon from "./components/testpersoon";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Nav from "./components/nav";
 
 function App() {
   return (
     <div>
       <Router>
         <main role="main">
-          <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pl-3 pt-3 pb-2 mb-3">
+          <div className="justify-content-between align-items-center pl-3 pt-3 pb-2 mb-3">
             <Switch>
               <Route path="/onderzoekers">
                 <Onderzoekers />
