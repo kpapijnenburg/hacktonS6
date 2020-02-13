@@ -46,7 +46,7 @@ class TestPersoon extends Component {
               <th>Naam</th>
               <td>{user.name}</td>
               <td>
-                <Switch onChange={this.handleChange} />
+                <Switch onChange={this.handleChange} checked={true} />
               </td>
               <td className="text-center text-danger pointer">
                 <strong>X</strong>
@@ -56,7 +56,7 @@ class TestPersoon extends Component {
               <th>Telefoonnummer</th>
               <td>+31637474440</td>
               <td>
-                <Switch onChange={this.handleChange} />
+                <Switch onChange={this.handleChange} checked={false} />
               </td>
               <td className="text-center text-danger pointer">
                 <strong> X </strong>
@@ -66,7 +66,7 @@ class TestPersoon extends Component {
               <th>Email</th>
               <td>jasperdekroon2000@gmail.com</td>
               <td>
-                <Switch onChange={this.handleChange} />
+                <Switch onChange={this.handleChange} checked={false} />
               </td>
               <th className="text-center text-danger pointer">X</th>
             </tr>
@@ -95,9 +95,9 @@ class TestPersoon extends Component {
           <tbody>
             <tr>
               <th>Facebook</th>
-              <th>{user.name}</th>
+              <td>{user.name}</td>
               <th>
-                <Switch onChange={this.handleChange} />
+                <Switch onChange={this.handleChange} checked={true} />
               </th>
               <th className="d-flex justify-content-center">
                 <button className="btn btn-danger">Disconnect</button>
@@ -105,9 +105,9 @@ class TestPersoon extends Component {
             </tr>
             <tr>
               <th>Twitter</th>
-              <th>{user.name}</th>
+              <td>{user.name}</td>
               <th>
-                <Switch onChange={this.handleChange} />
+                <Switch onChange={this.handleChange} checked={true} />
               </th>
               <th className="d-flex justify-content-center">
                 <button className="btn btn-primary">Connect</button>
@@ -135,22 +135,22 @@ class TestPersoon extends Component {
           </thead>
           <tbody>
             <tr>
-              <th>Neutral</th>
-              <th>None of the above</th>
-              <th>5</th>
-              <th>07-08-15 9:54</th>
+              <td>Neutral</td>
+              <td>None of tde above</td>
+              <td>5</td>
+              <td>07-08-15 9:54</td>
             </tr>
             <tr>
-              <th>Positive</th>
-              <th>None of the above</th>
-              <th>26</th>
-              <th>07-08-15 9:54</th>
+              <td>Positive</td>
+              <td>None of tde above</td>
+              <td>26</td>
+              <td>07-08-15 9:54</td>
             </tr>
             <tr>
-              <th>Neutral</th>
-              <th>None of the above</th>
-              <th>27</th>
-              <th>07-08-15 9:54</th>
+              <td>Neutral</td>
+              <td>None of the above</td>
+              <td>27</td>
+              <td>07-08-15 9:54</td>
             </tr>
           </tbody>
         </table>
@@ -167,25 +167,25 @@ class TestPersoon extends Component {
           </thead>
           <tbody>
             <tr>
-              <th>Neutral</th>
-              <th>None of the above</th>
-              <th>5</th>
-              <th>109</th>
-              <th>07-08-15 9:54</th>
+              <td>Neutral</td>
+              <td>None of the above</td>
+              <td>5</td>
+              <td>109</td>
+              <td>07-08-15 9:54</td>
             </tr>
             <tr>
-              <th>Positive</th>
-              <th>None of the above</th>
-              <th>26</th>
-              <th>872</th>
-              <th>07-08-15 9:54</th>
+              <td>Positive</td>
+              <td>None of the above</td>
+              <td>26</td>
+              <td>872</td>
+              <td>07-08-15 9:54</td>
             </tr>
             <tr>
-              <th>Neutral</th>
-              <th>None of the above</th>
-              <th>27</th>
-              <th>180</th>
-              <th>07-08-15 9:54</th>
+              <td>Neutral</td>
+              <td>None of the above</td>
+              <td>27</td>
+              <td>180</td>
+              <td>07-08-15 9:54</td>
             </tr>
           </tbody>
         </table>
