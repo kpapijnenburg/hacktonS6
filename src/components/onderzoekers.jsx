@@ -3,6 +3,7 @@ import DataAdapter from "../util/DataAdapter";
 import ResearchChart from "./onderzoek_chart";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import FormBuilder from "react-form-builder2";
+import curbee from '../images/q3vbku5c26.jpg';
 
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../../node_modules/font-awesome/css/font-awesome.min.css";
@@ -25,6 +26,7 @@ class Onderzoekers extends Component {
   formbuilderStyle = {
     width: "100%"
   };
+
 
   showFormulierBuilder = () => {
     const { showFormBuilder } = this.state;
@@ -51,13 +53,16 @@ class Onderzoekers extends Component {
       <section class="col">
         {showFormBuilder === false && showGraph === false ? (
           <div>
-            <button
-              class="btn btn-curbee"
-              type="button"
-              onClick={this.showFormulierBuilder}
-            >
-              Nieuw onderzoek starten
-            </button>
+            <div>
+              <button
+                class="btn btn-curbee"
+                type="button"
+                onClick={this.showFormulierBuilder}
+              >
+                Nieuw onderzoek starten
+              </button>
+              <img curbeeStyle src={curbee} alt='Curbee' />
+            </div>
             <p className="lead mt-3">Actieve onderzoeken</p>
             <table class="table table-hover">
               <thead class="thead-dark">
