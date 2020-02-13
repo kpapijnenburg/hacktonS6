@@ -8,6 +8,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.4.1",
+    "bootstrap-toggle": "^2.2.2",
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
     "react": "^16.12.0",
@@ -16,7 +17,8 @@
     "react-google-charts": "^3.0.15",
     "react-form-builder2": "^0.4.3",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.1"
+    "react-scripts": "3.3.1",
+    "react-switch": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

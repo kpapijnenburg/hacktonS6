@@ -12,7 +12,8 @@ class Onderzoekers extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showFormBuilder: false
+      showFormBuilder: false,
+      showGraph: false
     };
   }
 
@@ -34,12 +35,21 @@ class Onderzoekers extends Component {
     }
   };
 
+  showGraph = () => {
+    const { showGraph } = this.state;
+    if (showGraph === false) {
+      this.setState({ showGraph: true });
+    } else {
+      this.setState({ showGraph: false });
+    }
+  };
+
   render() {
-    const { showFormBuilder } = this.state;
+    const { showFormBuilder, showGraph } = this.state;
 
     return (
       <section class="col">
-        {showFormBuilder === false ? (
+        {showFormBuilder === false && showGraph === false ? (
           <div>
             <button
               class="btn btn-primary"
@@ -70,9 +80,13 @@ class Onderzoekers extends Component {
                   </td>
                   <td>129109</td>
                   <td>
-                    <Link to="/onderzoekers">
-                      <button class="btn btn-info">Data inzien</button>
-                    </Link>
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    onClick={this.showGraph}
+                  >
+                    Data Inzien
+                  </button>
                     <button class="btn btn-light">Wijzigen</button>
                   </td>
                 </tr>
@@ -82,9 +96,13 @@ class Onderzoekers extends Component {
                   </td>
                   <td>1387290</td>
                   <td>
-                    <Link to="/onderzoekers">
-                      <button class="btn btn-info">Data inzien</button>
-                    </Link>
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    onClick={this.showGraph}
+                  >
+                    Data Inzien
+                  </button>
                     <button class="btn btn-light">Wijzigen</button>
                   </td>
                 </tr>
@@ -94,9 +112,13 @@ class Onderzoekers extends Component {
                   </td>
                   <td>982139</td>
                   <td>
-                    <Link to="/onderzoekers">
-                      <button class="btn btn-info">Data inzien</button>
-                    </Link>
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    onClick={this.showGraph}
+                  >
+                    Data Inzien
+                  </button>
                     <button class="btn btn-light">Wijzigen</button>
                   </td>
                 </tr>
@@ -125,9 +147,13 @@ class Onderzoekers extends Component {
                   </td>
                   <td>677899</td>
                   <td>
-                    <Link to="/onderzoekers">
-                      <button class="btn btn-info">Data inzien</button>
-                    </Link>
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    onClick={this.showGraph}
+                  >
+                    Data Inzien
+                  </button>
                     <button
                       style={{ cursor: "not-allowed" }}
                       class="btn btn-light"
@@ -143,9 +169,13 @@ class Onderzoekers extends Component {
                   </td>
                   <td>3120209</td>
                   <td>
-                    <Link to="/onderzoekers">
-                      <button class="btn btn-info">Data inzien</button>
-                    </Link>
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    onClick={this.showGraph}
+                  >
+                    Data Inzien
+                  </button>
                     <button
                       style={{ cursor: "not-allowed" }}
                       class="btn btn-light"
@@ -161,9 +191,13 @@ class Onderzoekers extends Component {
                   </td>
                   <td>998789</td>
                   <td>
-                    <Link to="/onderzoekers">
-                      <button class="btn btn-info">Data inzien</button>
-                    </Link>
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    onClick={this.showGraph}
+                  >
+                    Data Inzien
+                  </button>
                     <button
                       style={{ cursor: "not-allowed" }}
                       class="btn btn-light disabled-button"
@@ -176,7 +210,7 @@ class Onderzoekers extends Component {
               </tbody>
             </table>
           </div>
-        ) : (
+        ) : showFormBuilder === true && showGraph === false ? (
           <div>
             <button
               class="btn btn-primary"
@@ -188,9 +222,6 @@ class Onderzoekers extends Component {
             <div>
               <p className="mt-3 lead">Creëer dynamisch form</p>
               <div class="clearfix" divStyle>
-                {/* <button class="btn btn-primary" id="button-preview">
-                  Preview Form
-                </button> */}
                 <div class="modal" id="preview-dialog">
                   <div class="modal-dialog">
                     <div class="modal-content">
@@ -215,6 +246,18 @@ class Onderzoekers extends Component {
                 <FormBuilder.ReactFormBuilder />
               </div>
             </div>
+          </div>
+        ) : (
+          <div>
+            <button
+              class="btn btn-primary"
+              type="button"
+              onClick={this.showGraph}
+            >
+              Terug
+            </button>
+
+          <ResearchChart/>
           </div>
         )}
       </section>
