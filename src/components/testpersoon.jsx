@@ -136,13 +136,13 @@ class TestPersoon extends Component {
           <tbody>
             <tr>
               <td>Neutral</td>
-              <td>None of tde above</td>
+              <td>None of the above</td>
               <td>5</td>
               <td>07-08-15 9:54</td>
             </tr>
             <tr>
               <td>Positive</td>
-              <td>None of tde above</td>
+              <td>None of the above</td>
               <td>26</td>
               <td>07-08-15 9:54</td>
             </tr>
