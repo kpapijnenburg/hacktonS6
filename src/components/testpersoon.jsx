@@ -24,7 +24,7 @@ class TestPersoon extends Component {
     this.displayProfile();
   };
 
-  handleChange() {}
+  handleChange() { }
 
   displayProfile = () => {
     const { user } = this.state;
