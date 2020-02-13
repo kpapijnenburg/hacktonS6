@@ -97,7 +97,7 @@ class TestPersoon extends Component {
               <th>Facebook</th>
               <td>{user.name}</td>
               <th>
-                <Switch onChange={this.handleChange} checked={true} />
+                <Switch onChange={this.handleChange} checked={false} />
               </th>
               <th className="d-flex justify-content-center">
                 <button className="btn btn-danger">Disconnect</button>
@@ -108,6 +108,16 @@ class TestPersoon extends Component {
               <td>{user.name}</td>
               <th>
                 <Switch onChange={this.handleChange} checked={true} />
+              </th>
+              <th className="d-flex justify-content-center">
+                <button className="btn btn-danger">Disconnect</button>
+              </th>
+            </tr>
+            <tr>
+              <th>Instagram</th>
+              <td>{user.name}</td>
+              <th>
+                <Switch onChange={this.handleChange} checked={false} />
               </th>
               <th className="d-flex justify-content-center">
                 <button className="btn btn-primary">Connect</button>
@@ -127,6 +137,18 @@ class TestPersoon extends Component {
         <table className="table table-bordered">
           <thead className="thead-dark">
             <tr>
+              <th>Tonen</th>
+              <th>
+                <Switch onChange={this.handleChange} checked={false} /></th>
+              <th>
+                <Switch onChange={this.handleChange} checked={false} /></th>
+              <th>
+                <Switch onChange={this.handleChange} checked={true} /></th>
+              <th>
+                <Switch onChange={this.handleChange} checked={true} /></th>
+            </tr>
+            <tr>
+              <th>id</th>
               <th>sentiment</th>
               <th>subject_matter</th>
               <th>retweet_count</th>
@@ -135,22 +157,28 @@ class TestPersoon extends Component {
           </thead>
           <tbody>
             <tr>
+              <td>dS9wmdcSD3n2esdj</td>
               <td>Neutral</td>
               <td>None of the above</td>
               <td>5</td>
               <td>07-08-15 9:54</td>
             </tr>
             <tr>
+              <td>E30SDd32ewoDDsle</td>
               <td>Positive</td>
               <td>None of the above</td>
               <td>26</td>
               <td>07-08-15 9:54</td>
             </tr>
             <tr>
+              <td>FEm39eSFJe30dSfd</td>
               <td>Neutral</td>
               <td>None of the above</td>
               <td>27</td>
               <td>07-08-15 9:54</td>
+            </tr>
+            <tr>
+              <td><button className="btn btn-light btn-sm">See More</button></td>
             </tr>
           </tbody>
         </table>
@@ -158,6 +186,20 @@ class TestPersoon extends Component {
         <table className="table table-bordered">
           <thead className="thead-dark">
             <tr>
+              <th>Tonen</th>
+              <th>
+                <Switch onChange={this.handleChange} checked={true} /></th>
+              <th>
+                <Switch onChange={this.handleChange} checked={true} /></th>
+              <th>
+                <Switch onChange={this.handleChange} checked={true} /></th>
+              <th>
+                <Switch onChange={this.handleChange} checked={true} /></th>
+              <th>
+                <Switch onChange={this.handleChange} checked={false} /></th>
+            </tr>
+            <tr>
+              <th>id</th>
               <th>sentiment</th>
               <th>subject_matter</th>
               <th>repost_count</th>
@@ -167,6 +209,7 @@ class TestPersoon extends Component {
           </thead>
           <tbody>
             <tr>
+              <td>qdDSom2d0sASUJbe</td>
               <td>Neutral</td>
               <td>None of the above</td>
               <td>5</td>
@@ -174,6 +217,7 @@ class TestPersoon extends Component {
               <td>07-08-15 9:54</td>
             </tr>
             <tr>
+              <td>Dai93SUe03mDjSf3</td>
               <td>Positive</td>
               <td>None of the above</td>
               <td>26</td>
@@ -181,11 +225,15 @@ class TestPersoon extends Component {
               <td>07-08-15 9:54</td>
             </tr>
             <tr>
+              <td>WP230dl0sBDKFHwl</td>
               <td>Neutral</td>
               <td>None of the above</td>
               <td>27</td>
               <td>180</td>
               <td>07-08-15 9:54</td>
+            </tr>
+            <tr>
+              <td><button className="btn btn-light btn-sm">See More</button></td>
             </tr>
           </tbody>
         </table>
