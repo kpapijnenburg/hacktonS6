@@ -80,12 +80,12 @@ class Onderzoekers extends Component {
                   </td>
                   <td>129109</td>
                   <td>
-                  <button
-                    class="btn btn-primary"
-                    type="button"
-                    onClick={this.showGraph}
-                  >
-                    Data Inzien
+                    <button
+                      class="btn btn-primary"
+                      type="button"
+                      onClick={this.showGraph}
+                    >
+                      Data Inzien
                   </button>
                     <button class="btn btn-light">Wijzigen</button>
                   </td>
@@ -96,12 +96,12 @@ class Onderzoekers extends Component {
                   </td>
                   <td>1387290</td>
                   <td>
-                  <button
-                    class="btn btn-primary"
-                    type="button"
-                    onClick={this.showGraph}
-                  >
-                    Data Inzien
+                    <button
+                      class="btn btn-primary"
+                      type="button"
+                      onClick={this.showGraph}
+                    >
+                      Data Inzien
                   </button>
                     <button class="btn btn-light">Wijzigen</button>
                   </td>
@@ -112,12 +112,12 @@ class Onderzoekers extends Component {
                   </td>
                   <td>982139</td>
                   <td>
-                  <button
-                    class="btn btn-primary"
-                    type="button"
-                    onClick={this.showGraph}
-                  >
-                    Data Inzien
+                    <button
+                      class="btn btn-primary"
+                      type="button"
+                      onClick={this.showGraph}
+                    >
+                      Data Inzien
                   </button>
                     <button class="btn btn-light">Wijzigen</button>
                   </td>
@@ -147,12 +147,12 @@ class Onderzoekers extends Component {
                   </td>
                   <td>677899</td>
                   <td>
-                  <button
-                    class="btn btn-primary"
-                    type="button"
-                    onClick={this.showGraph}
-                  >
-                    Data Inzien
+                    <button
+                      class="btn btn-primary"
+                      type="button"
+                      onClick={this.showGraph}
+                    >
+                      Data Inzien
                   </button>
                     <button
                       style={{ cursor: "not-allowed" }}
@@ -169,12 +169,12 @@ class Onderzoekers extends Component {
                   </td>
                   <td>3120209</td>
                   <td>
-                  <button
-                    class="btn btn-primary"
-                    type="button"
-                    onClick={this.showGraph}
-                  >
-                    Data Inzien
+                    <button
+                      class="btn btn-primary"
+                      type="button"
+                      onClick={this.showGraph}
+                    >
+                      Data Inzien
                   </button>
                     <button
                       style={{ cursor: "not-allowed" }}
@@ -191,12 +191,12 @@ class Onderzoekers extends Component {
                   </td>
                   <td>998789</td>
                   <td>
-                  <button
-                    class="btn btn-primary"
-                    type="button"
-                    onClick={this.showGraph}
-                  >
-                    Data Inzien
+                    <button
+                      class="btn btn-primary"
+                      type="button"
+                      onClick={this.showGraph}
+                    >
+                      Data Inzien
                   </button>
                     <button
                       style={{ cursor: "not-allowed" }}
@@ -248,18 +248,18 @@ class Onderzoekers extends Component {
             </div>
           </div>
         ) : (
-          <div>
-            <button
-              class="btn btn-primary"
-              type="button"
-              onClick={this.showGraph}
-            >
-              Terug
+              <div>
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  onClick={this.showGraph}
+                >
+                  Terug
             </button>
 
-          <ResearchChart/>
-          </div>
-        )}
+                <ResearchChart />
+              </div>
+            )}
       </section>
     );
   }
