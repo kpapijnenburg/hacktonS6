@@ -1,23 +1,27 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import FormBuilder from 'react-form-builder2';
+import FormBuilder from "react-form-builder2";
+
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../../node_modules/font-awesome/css/font-awesome.min.css";
+import "../../node_modules/react-form-builder2/dist/app.css";
 
 class Onderzoekers extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showFormBuilder: false,
+      showFormBuilder: false
     };
   }
 
   divStyle = {
-    margin: '10px',
-    width: '70%'
-  }
+    margin: "10px",
+    width: "70%"
+  };
 
   formbuilderStyle = {
-    width: '100%'
-  }
+    width: "100%"
+  };
 
   showFormulierBuilder = () => {
     const { showFormBuilder } = this.state;
@@ -26,7 +30,7 @@ class Onderzoekers extends Component {
     } else {
       this.setState({ showFormBuilder: false });
     }
-  }
+  };
 
   render() {
     const { showFormBuilder } = this.state;
@@ -35,7 +39,11 @@ class Onderzoekers extends Component {
       <section class="col">
         {showFormBuilder === false ? (
           <div>
-            <button class="btn btn-primary" type="button" onClick={this.showFormulierBuilder} >
+            <button
+              class="btn btn-primary"
+              type="button"
+              onClick={this.showFormulierBuilder}
+            >
               Nieuw onderzoek starten
             </button>
             <p className="lead mt-3">Actieve onderzoeken</p>
@@ -44,13 +52,13 @@ class Onderzoekers extends Component {
                 <tr>
                   <th class="col" scope="col">
                     Onderzoeksnaam
-              </th>
+                  </th>
                   <th class="col" scope="col">
                     Aantal testpersonen
-              </th>
+                  </th>
                   <th class="col" scope="col">
                     Acties
-              </th>
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -99,13 +107,13 @@ class Onderzoekers extends Component {
                 <tr>
                   <th class="col" scope="col">
                     Onderzoeksnaam
-              </th>
+                  </th>
                   <th class="col" scope="col">
                     Aantal testpersonen
-              </th>
+                  </th>
                   <th class="col " scope="col">
                     Acties
-              </th>
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -124,7 +132,7 @@ class Onderzoekers extends Component {
                       disabled
                     >
                       Wijzigen
-                </button>
+                    </button>
                   </td>
                 </tr>
                 <tr>
@@ -142,7 +150,7 @@ class Onderzoekers extends Component {
                       disabled
                     >
                       Wijzigen
-                </button>
+                    </button>
                   </td>
                 </tr>
                 <tr>
@@ -160,40 +168,53 @@ class Onderzoekers extends Component {
                       disabled
                     >
                       Wijzigen
-                </button>
+                    </button>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
         ) : (
+          <div>
+            <button
+              class="btn btn-primary"
+              type="button"
+              onClick={this.showFormulierBuilder}
+            >
+              Terug
+            </button>
             <div>
-              <button class="btn btn-primary" type="button" onClick={this.showFormulierBuilder} >
-                Terug
-              </button>
-              <div>
-                <h1>Creëer dynamisch form</h1>
-                <div class="clearfix" divStyle>
-                  <button class="btn btn-primary" id="button-preview">Preview Form</button>
-                  <div class="modal" id="preview-dialog">
-                    <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-body">
-                          <div id="form-generator"></div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal" id="button-close">Close</button>
-                        </div>
+              <p className="mt-3 lead">Creëer dynamisch form</p>
+              <div class="clearfix" divStyle>
+                {/* <button class="btn btn-primary" id="button-preview">
+                  Preview Form
+                </button> */}
+                <div class="modal" id="preview-dialog">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <div id="form-generator"></div>
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-default"
+                          data-dismiss="modal"
+                          id="button-close"
+                        >
+                          Close
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div>
-                  <FormBuilder.ReactFormBuilder />
-                </div>
+              </div>
+              <div>
+                <FormBuilder.ReactFormBuilder />
               </div>
             </div>
-          )}
+          </div>
+        )}
       </section>
     );
   }
