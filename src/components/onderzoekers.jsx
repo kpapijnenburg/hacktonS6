@@ -1,9 +1,7 @@
 import React, { Component } from "react";
-import DataAdapter from "../util/DataAdapter";
+import Switch from "react-switch";
 import ResearchChart from "./onderzoek_chart";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import FormBuilder from "react-form-builder2";
-import curbee from '../images/q3vbku5c26.jpg';
 
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../../node_modules/font-awesome/css/font-awesome.min.css";
@@ -46,6 +44,8 @@ class Onderzoekers extends Component {
     }
   };
 
+  handleChange() { }
+
   render() {
     const { showFormBuilder, showGraph } = this.state;
 
@@ -85,7 +85,10 @@ class Onderzoekers extends Component {
                   <td>
                     <h3>Eenzaamheid in Nederland</h3>
                   </td>
-                  <td>129109</td>
+                  <td>
+                    <Switch disabled onChange={this.handleChange} checked={false} />
+                  </td>
+                  <td>0</td>
                   <td>
                     <button
                       class="btn btn-dark"
@@ -107,13 +110,16 @@ class Onderzoekers extends Component {
                   <td>
                     <h3>Gameverslaving in Nederland</h3>
                   </td>
-                  <td>1387290</td>
+                  <td>
+                    <Switch onChange={this.handleChange} checked={true} />
+                  </td>
+                  <td>13872</td>
                   <td>
                     <button
-                      class="btn btn-dark"
+                      class="btn btn-danger"
                       type="button"
                     >
-                      Start Onderzoek
+                      Sluit Onderzoek
                   </button>
                     <button
                       class="btn btn-primary"
@@ -129,13 +135,16 @@ class Onderzoekers extends Component {
                   <td>
                     <h3>Vermogen van de gemiddelde Nederlander</h3>
                   </td>
-                  <td>982139</td>
+                  <td>
+                    <Switch onChange={this.handleChange} checked={false} />
+                  </td>
+                  <td>98213</td>
                   <td>
                     <button
-                      class="btn btn-dark"
+                      class="btn btn-danger"
                       type="button"
                     >
-                      Start Onderzoek
+                      Sluit Onderzoek
                   </button>
                     <button
                       class="btn btn-primary"
@@ -173,6 +182,9 @@ class Onderzoekers extends Component {
                   <td>
                     <h3>Cyberpesten bij jongeren</h3>
                   </td>
+                  <td>
+                    <Switch disabled checked={false} />
+                  </td>
                   <td>677899</td>
                   <td>
                     <button
@@ -203,6 +215,9 @@ class Onderzoekers extends Component {
                   <td>
                     <h3>Social media veslaving</h3>
                   </td>
+                  <td>
+                    <Switch disabled checked={false} />
+                  </td>
                   <td>3120209</td>
                   <td>
                     <button
@@ -232,6 +247,9 @@ class Onderzoekers extends Component {
                 <tr>
                   <td>
                     <h3>Seksuele voorlichting op basisscholen in Nederland</h3>
+                  </td>
+                  <td>
+                    <Switch disabled checked={false} />
                   </td>
                   <td>998789</td>
                   <td>
