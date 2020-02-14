@@ -62,7 +62,7 @@ class Onderzoekers extends Component {
                 Nieuw onderzoek starten
               </button>
             </div>
-            <p className="lead mt-3">Actieve onderzoeken</p>
+            <h2>Lopende onderzoeken</h2>
             <table class="table table-hover">
               <thead class="thead-dark">
                 <tr>
@@ -159,7 +159,7 @@ class Onderzoekers extends Component {
               </tbody>
             </table>
 
-            <h2>Inactieve onderzoeken</h2>
+            <h2>Gesloten onderzoeken</h2>
             <table class="table table-hover">
               <thead class="thead-dark">
                 <tr>
