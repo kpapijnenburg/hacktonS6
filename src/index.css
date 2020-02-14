@@ -15,15 +15,3 @@ code {
 .pointer {
   cursor: pointer;
 }
-
-.btn-curbee {
-  background-color: #ee9dbc !important;
-  border: 1px solid black !important;
-  border-radius: 4px !important;
-}
-
-img {
-    height: 175px !important;
-    width: 175px !important;
-    float: right;
-}

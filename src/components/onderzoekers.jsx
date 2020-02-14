@@ -61,7 +61,6 @@ class Onderzoekers extends Component {
               >
                 Nieuw onderzoek starten
               </button>
-              <img curbeeStyle src={curbee} alt='Curbee' />
             </div>
             <p className="lead mt-3">Actieve onderzoeken</p>
             <table class="table table-hover">
