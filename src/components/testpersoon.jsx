@@ -110,7 +110,7 @@ class TestPersoon extends Component {
                 <Switch onChange={this.handleChange} checked={true} />
               </th>
               <th className="d-flex justify-content-center">
-                <button className="btn btn-curbee">Connect</button>
+                <button className="btn btn-primary">Connect</button>
               </th>
             </tr>
           </tbody>

@@ -55,7 +55,7 @@ class Onderzoekers extends Component {
           <div>
             <div>
               <button
-                class="btn btn-curbee"
+                class="btn btn-primary"
                 type="button"
                 onClick={this.showFormulierBuilder}
               >
@@ -85,7 +85,7 @@ class Onderzoekers extends Component {
                   <td>129109</td>
                   <td>
                     <button
-                      class="btn btn-curbee"
+                      class="btn btn-primary"
                       type="button"
                       onClick={this.showGraph}
                     >
@@ -101,7 +101,7 @@ class Onderzoekers extends Component {
                   <td>1387290</td>
                   <td>
                     <button
-                      class="btn btn-curbee"
+                      class="btn btn-primary"
                       type="button"
                       onClick={this.showGraph}
                     >
@@ -117,7 +117,7 @@ class Onderzoekers extends Component {
                   <td>982139</td>
                   <td>
                     <button
-                      class="btn btn-curbee"
+                      class="btn btn-primary"
                       type="button"
                       onClick={this.showGraph}
                     >
@@ -152,7 +152,7 @@ class Onderzoekers extends Component {
                   <td>677899</td>
                   <td>
                     <button
-                      class="btn btn-curbee"
+                      class="btn btn-primary"
                       type="button"
                       onClick={this.showGraph}
                     >
@@ -174,7 +174,7 @@ class Onderzoekers extends Component {
                   <td>3120209</td>
                   <td>
                     <button
-                      class="btn btn-curbee"
+                      class="btn btn-primary"
                       type="button"
                       onClick={this.showGraph}
                     >
@@ -196,7 +196,7 @@ class Onderzoekers extends Component {
                   <td>998789</td>
                   <td>
                     <button
-                      class="btn btn-curbee"
+                      class="btn btn-primary"
                       type="button"
                       onClick={this.showGraph}
                     >
@@ -217,7 +217,7 @@ class Onderzoekers extends Component {
         ) : showFormBuilder === true && showGraph === false ? (
           <div>
             <button
-              class="btn btn-curbee"
+              class="btn btn-primary"
               type="button"
               onClick={this.showFormulierBuilder}
             >
@@ -254,7 +254,7 @@ class Onderzoekers extends Component {
         ) : (
               <div>
                 <button
-                  class="btn btn-curbee"
+                  class="btn btn-primary"
                   type="button"
                   onClick={this.showGraph}
                 >
