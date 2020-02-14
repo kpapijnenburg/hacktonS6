@@ -70,6 +70,9 @@ class Onderzoekers extends Component {
                     Onderzoeksnaam
                   </th>
                   <th class="col" scope="col">
+                    Actief
+                  </th>
+                  <th class="col" scope="col">
                     Aantal testpersonen
                   </th>
                   <th class="col" scope="col">
@@ -85,13 +88,19 @@ class Onderzoekers extends Component {
                   <td>129109</td>
                   <td>
                     <button
+                      class="btn btn-dark"
+                      type="button"
+                    >
+                      Start Onderzoek
+                  </button>
+                    <button
                       class="btn btn-primary"
                       type="button"
                       onClick={this.showGraph}
                     >
-                      Data Inzien
+                      Grafiek Data Inzien
                   </button>
-                    <button class="btn btn-light">Wijzigen</button>
+                    <button class="btn btn-light">Wijzig Eigenschappen</button>
                   </td>
                 </tr>
                 <tr>
@@ -101,13 +110,19 @@ class Onderzoekers extends Component {
                   <td>1387290</td>
                   <td>
                     <button
+                      class="btn btn-dark"
+                      type="button"
+                    >
+                      Start Onderzoek
+                  </button>
+                    <button
                       class="btn btn-primary"
                       type="button"
                       onClick={this.showGraph}
                     >
-                      Data Inzien
+                      Grafiek Data Inzien
                   </button>
-                    <button class="btn btn-light">Wijzigen</button>
+                    <button class="btn btn-light">Wijzig Eigenschappen</button>
                   </td>
                 </tr>
                 <tr>
@@ -117,13 +132,19 @@ class Onderzoekers extends Component {
                   <td>982139</td>
                   <td>
                     <button
+                      class="btn btn-dark"
+                      type="button"
+                    >
+                      Start Onderzoek
+                  </button>
+                    <button
                       class="btn btn-primary"
                       type="button"
                       onClick={this.showGraph}
                     >
-                      Data Inzien
+                      Grafiek Data Inzien
                   </button>
-                    <button class="btn btn-light">Wijzigen</button>
+                    <button class="btn btn-light">Wijzig Eigenschappen</button>
                   </td>
                 </tr>
               </tbody>
@@ -135,6 +156,9 @@ class Onderzoekers extends Component {
                 <tr>
                   <th class="col" scope="col">
                     Onderzoeksnaam
+                  </th>
+                  <th class="col" scope="col">
+                    Actief
                   </th>
                   <th class="col" scope="col">
                     Aantal testpersonen
@@ -152,18 +176,26 @@ class Onderzoekers extends Component {
                   <td>677899</td>
                   <td>
                     <button
+                      style={{ cursor: "not-allowed" }}
+                      class="btn btn-dark"
+                      type="button"
+                      disabled
+                    >
+                      Start Onderzoek
+                  </button>
+                    <button
                       class="btn btn-primary"
                       type="button"
                       onClick={this.showGraph}
                     >
-                      Data Inzien
+                      Grafiek Data Inzien
                   </button>
                     <button
                       style={{ cursor: "not-allowed" }}
                       class="btn btn-light"
                       disabled
                     >
-                      Wijzigen
+                      Wijzig Eigenschappen
                     </button>
                   </td>
                 </tr>
@@ -174,18 +206,26 @@ class Onderzoekers extends Component {
                   <td>3120209</td>
                   <td>
                     <button
+                      style={{ cursor: "not-allowed" }}
+                      class="btn btn-dark"
+                      type="button"
+                      disabled
+                    >
+                      Start Onderzoek
+                  </button>
+                    <button
                       class="btn btn-primary"
                       type="button"
                       onClick={this.showGraph}
                     >
-                      Data Inzien
+                      Grafiek Data Inzien
                   </button>
                     <button
                       style={{ cursor: "not-allowed" }}
                       class="btn btn-light"
                       disabled
                     >
-                      Wijzigen
+                      Wijzig Eigenschappen
                     </button>
                   </td>
                 </tr>
@@ -196,18 +236,26 @@ class Onderzoekers extends Component {
                   <td>998789</td>
                   <td>
                     <button
+                      style={{ cursor: "not-allowed" }}
+                      class="btn btn-dark"
+                      type="button"
+                      disabled
+                    >
+                      Start Onderzoek
+                  </button>
+                    <button
                       class="btn btn-primary"
                       type="button"
                       onClick={this.showGraph}
                     >
-                      Data Inzien
+                      Grafiek Data Inzien
                   </button>
                     <button
                       style={{ cursor: "not-allowed" }}
                       class="btn btn-light disabled-button"
                       disabled
                     >
-                      Wijzigen
+                      Wijzig Eigenschappen
                     </button>
                   </td>
                 </tr>
@@ -216,13 +264,20 @@ class Onderzoekers extends Component {
           </div>
         ) : showFormBuilder === true && showGraph === false ? (
           <div>
-            <button
-              class="btn btn-primary"
-              type="button"
-              onClick={this.showFormulierBuilder}
-            >
-              Terug
+            <div>
+              <button
+                class="btn btn-primary"
+                type="button"
+                onClick={this.showFormulierBuilder}
+              >
+                Terug
             </button>
+              <button
+                class="btn btn-primary"
+                type="button"
+                style={{ float: "right" }}
+              >Preview Onderzoek</button>
+            </div>
             <div>
               <p className="mt-3 lead">Creëer dynamisch form</p>
               <div class="clearfix" divStyle>
@@ -249,6 +304,7 @@ class Onderzoekers extends Component {
               <div>
                 <FormBuilder.ReactFormBuilder />
               </div>
+
             </div>
           </div>
         ) : (
