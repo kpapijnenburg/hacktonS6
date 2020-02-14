@@ -178,7 +178,7 @@ class TestPersoon extends Component {
               <td>07-08-15 9:54</td>
             </tr>
             <tr>
-              <td><button className="btn btn-light btn-sm">See More</button></td>
+              <td colSpan="6"><button className="btn btn-light btn-sm">See More</button></td>
             </tr>
           </tbody>
         </table>
@@ -233,7 +233,7 @@ class TestPersoon extends Component {
               <td>07-08-15 9:54</td>
             </tr>
             <tr>
-              <td><button className="btn btn-light btn-sm">See More</button></td>
+              <td colSpan="6"><button className="btn btn-light btn-sm">See More</button></td>
             </tr>
           </tbody>
         </table>
