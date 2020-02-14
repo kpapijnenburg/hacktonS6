@@ -91,19 +91,19 @@ class Onderzoekers extends Component {
                   <td>0</td>
                   <td>
                     <button
-                      class="btn btn-dark"
+                      class="btn btn-success"
                       type="button"
                     >
                       Start Onderzoek
                   </button>
                     <button
-                      class="btn btn-primary"
+                      class="btn btn-dark"
                       type="button"
                       onClick={this.showGraph}
                     >
                       Grafiek Data Inzien
                   </button>
-                    <button class="btn btn-light">Wijzig Eigenschappen</button>
+                    <button class="btn btn-info">Wijzig Eigenschappen</button>
                   </td>
                 </tr>
                 <tr>
@@ -122,13 +122,13 @@ class Onderzoekers extends Component {
                       Sluit Onderzoek
                   </button>
                     <button
-                      class="btn btn-primary"
+                      class="btn btn-dark"
                       type="button"
                       onClick={this.showGraph}
                     >
                       Grafiek Data Inzien
                   </button>
-                    <button class="btn btn-light">Wijzig Eigenschappen</button>
+                    <button class="btn btn-info">Wijzig Eigenschappen</button>
                   </td>
                 </tr>
                 <tr>
@@ -147,13 +147,13 @@ class Onderzoekers extends Component {
                       Sluit Onderzoek
                   </button>
                     <button
-                      class="btn btn-primary"
+                      class="btn btn-dark"
                       type="button"
                       onClick={this.showGraph}
                     >
                       Grafiek Data Inzien
                   </button>
-                    <button class="btn btn-light">Wijzig Eigenschappen</button>
+                    <button class="btn btn-info">Wijzig Eigenschappen</button>
                   </td>
                 </tr>
               </tbody>
@@ -189,14 +189,14 @@ class Onderzoekers extends Component {
                   <td>
                     <button
                       style={{ cursor: "not-allowed" }}
-                      class="btn btn-dark"
+                      class="btn btn-success"
                       type="button"
                       disabled
                     >
                       Start Onderzoek
                   </button>
                     <button
-                      class="btn btn-primary"
+                      class="btn btn-dark"
                       type="button"
                       onClick={this.showGraph}
                     >
@@ -204,7 +204,7 @@ class Onderzoekers extends Component {
                   </button>
                     <button
                       style={{ cursor: "not-allowed" }}
-                      class="btn btn-light"
+                      class="btn btn-info"
                       disabled
                     >
                       Wijzig Eigenschappen
@@ -222,14 +222,14 @@ class Onderzoekers extends Component {
                   <td>
                     <button
                       style={{ cursor: "not-allowed" }}
-                      class="btn btn-dark"
+                      class="btn btn-success"
                       type="button"
                       disabled
                     >
                       Start Onderzoek
                   </button>
                     <button
-                      class="btn btn-primary"
+                      class="btn btn-dark"
                       type="button"
                       onClick={this.showGraph}
                     >
@@ -237,7 +237,7 @@ class Onderzoekers extends Component {
                   </button>
                     <button
                       style={{ cursor: "not-allowed" }}
-                      class="btn btn-light"
+                      class="btn btn-info"
                       disabled
                     >
                       Wijzig Eigenschappen
@@ -255,14 +255,14 @@ class Onderzoekers extends Component {
                   <td>
                     <button
                       style={{ cursor: "not-allowed" }}
-                      class="btn btn-dark"
+                      class="btn btn-success"
                       type="button"
                       disabled
                     >
                       Start Onderzoek
                   </button>
                     <button
-                      class="btn btn-primary"
+                      class="btn btn-dark"
                       type="button"
                       onClick={this.showGraph}
                     >
@@ -270,7 +270,7 @@ class Onderzoekers extends Component {
                   </button>
                     <button
                       style={{ cursor: "not-allowed" }}
-                      class="btn btn-light disabled-button"
+                      class="btn btn-info disabled-button"
                       disabled
                     >
                       Wijzig Eigenschappen
